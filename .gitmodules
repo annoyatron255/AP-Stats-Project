@@ -1,0 +1,27 @@
+[submodule "sample/verilog_tutorials_BB"]
+	path = sample/verilog_tutorials_BB
+	url = https://github.com/peepo/verilog_tutorials_BB
+[submodule "sample/icebreaker-fizzbuzz"]
+	path = sample/icebreaker-fizzbuzz
+	url = https://github.com/kbob/icebreaker-fizzbuzz
+[submodule "sample/icebreaker-examples"]
+	path = sample/icebreaker-examples
+	url = https://github.com/icebreaker-fpga/icebreaker-examples
+[submodule "sample/hdl"]
+	path = sample/hdl
+	url = https://github.com/smartbench/hdl
+[submodule "sample/fpga"]
+	path = sample/fpga
+	url = https://github.com/mdavidsaver/fpga
+[submodule "sample/open-fpga-verilog-tutorial"]
+	path = sample/open-fpga-verilog-tutorial
+	url = https://github.com/Obijuan/open-fpga-verilog-tutorial
+[submodule "sample/pmods"]
+	path = sample/pmods
+	url = https://github.com/daveshah1/pmods
+[submodule "sample/iceZ0mb1e"]
+	path = sample/iceZ0mb1e
+	url = https://github.com/abnoname/iceZ0mb1e
+[submodule "sample/fpga-pulses-ice"]
+	path = sample/fpga-pulses-ice
+	url = https://github.com/chiralhat/fpga-pulses-ice
