@@ -2,11 +2,11 @@
 
 num_trials=50
 
-make_dir=$(find . -mindepth 1 -maxdepth 1 -type d | head -n 1)
-data_file=$make_dir.csv
+make_dir=./open-fpga-verilog-tutorial/tutorial/ICESTICK/T30-microbio
+data_file=T30-microbio.csv
 
-pcf_file=$(find . -type f -name *.pcf | head -n 1)
-asc_file=$(find . -type f -name *.asc | head -n 1)
+pcf_file=./open-fpga-verilog-tutorial/tutorial/ICESTICK/T30-microbio/microbio.pcf
+asc_file=./open-fpga-verilog-tutorial/tutorial/ICESTICK/T30-microbio/microbio.txt
 
 echo '"'$make_dir'"," ",' > $data_file
 

@@ -2,11 +2,11 @@
 
 num_trials=50
 
-make_dir=$(find . -mindepth 1 -maxdepth 1 -type d | head -n 1)
-data_file=$make_dir.csv
+make_dir=./verilog_tutorials_BB/project_18
+data_file=project_18.csv
 
-pcf_file=$(find . -type f -name *.pcf | head -n 1)
-asc_file=$(find . -type f -name *.asc | head -n 1)
+pcf_file=./verilog_tutorials_BB/project_18/iCE40.pcf
+asc_file=./verilog_tutorials_BB/project_18/timing.asc
 
 echo '"'$make_dir'"," ",' > $data_file
 

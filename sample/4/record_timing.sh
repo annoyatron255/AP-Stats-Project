@@ -2,8 +2,8 @@
 
 num_trials=50
 
-make_dir=$(find . -mindepth 1 -maxdepth 1 -type d | head -n 1)
-data_file=$make_dir.csv
+make_dir=./icebreaker-examples/dvi-12bit
+data_file=dvi-12bit.csv
 
 pcf_file=$(find . -type f -name *.pcf | head -n 1)
 asc_file=$(find . -type f -name *.asc | head -n 1)
@@ -18,6 +18,6 @@ do
 	SECONDS=0
 	make -C $make_dir
 	printf $SECONDS, >> $data_file
-	icetime -tmd hx8k -p $pcf_file -P tq144 $asc_file | \
+	cat ./icebreaker-examples/dvi-12bit/dvi-12bit.rpt | \
 		grep -o -P '(?<=\().*(?=MHz)' | tr ' ' ',' >> $data_file
 done

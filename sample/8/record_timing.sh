@@ -2,11 +2,11 @@
 
 num_trials=50
 
-make_dir=$(find . -mindepth 1 -maxdepth 1 -type d | head -n 1)
-data_file=$make_dir.csv
+make_dir=./pmods/lcd_test
+data_file=lcd_test.csv
 
-pcf_file=$(find . -type f -name *.pcf | head -n 1)
-asc_file=$(find . -type f -name *.asc | head -n 1)
+pcf_file=./pmods/lcd_test/lcd_test.pcf
+asc_file=./pmods/lcd_test/lcd_test.asc
 
 echo '"'$make_dir'"," ",' > $data_file
 
@@ -16,7 +16,7 @@ for i in `seq 1 $num_trials`;
 do
 	make -C $make_dir clean
 	SECONDS=0
-	make -C $make_dir
+	make -C $make_dir lcd_test.asc
 	printf $SECONDS, >> $data_file
 	icetime -tmd hx8k -p $pcf_file -P tq144 $asc_file | \
 		grep -o -P '(?<=\().*(?=MHz)' | tr ' ' ',' >> $data_file
